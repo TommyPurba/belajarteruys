@@ -63,14 +63,37 @@ console.log("segitiga sama kaki");
 
 for(let i =1 ;i<=baris;i++){
     for(let c =baris-1; c>=i;c--){
-        pola4 += " ";
+        pola5 += " ";
     }
 
     for(let b = 1 ; b<=i;b++)
     {
-        pola4 += "*";
+        pola5 += "*";
     }
-    pola4 += "\n";
+    for(let d = 2 ; d<=i;d++)
+    {
+        pola5 += "*";
+    }
+    
+    pola5 += "\n";
 }
 
-console.log(pola4);
+console.log(pola5);
+
+console.log("ujicoba");
+for(let i =1 ; i <=baris;i++){
+    for(let x = 1; x<=i;x++ ){
+        pola6 += " ";
+    }
+    for(let q = baris-1; q>=i; q--){
+        pola6 += "*";
+    }
+   
+    for(let y =baris; y>=i; y--){
+        pola6 += "-";
+    }
+
+    pola6 += "\n";
+}
+
+console.log(pola6);
