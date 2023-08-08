@@ -31,7 +31,7 @@ console.log(d);
 console.log(b);
 console.log(z);
 console.log(f);
-
+console.log(g);
 }
 
 dataHandling2(input);

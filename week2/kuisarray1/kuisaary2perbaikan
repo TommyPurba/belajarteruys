@@ -1,0 +1,20 @@
+let input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
+
+function dataHandling2(input) {
+  //dibawah bisa langsung mengubah input sekaligus kayak dibawah ini
+  input.splice(1,4, "Roman Alamsyah Elsharawy", "Provinsi Bandar Lampung", "21/05/1989", "Pria", "SMA Internasional Metro")
+  console.log(input)
+  let tanggalSplited = input[3].split('/'); //['21','05','1989] akibat split dengan /
+  switch(tanggalSplited[1]) {
+    case '05':
+      console.log('Mei');
+      break;
+    //dan case seterusnya
+  }
+  let tanggalBaru = [tanggalSplited[2], tanggalSplited[0], tanggalSplited[1]];
+  console.log(tanggalBaru);
+  console.log(tanggalSplited.join('-')) //method join dengan - 21-05-1989
+  console.log(input[1].slice(0,15)) //slice untuk 15 karakter
+}
+
+dataHandling2(input);
