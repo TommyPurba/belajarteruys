@@ -1,10 +1,12 @@
 function angkaPalindrome(num) {
     
-    for( let a=1,b=2 ; a!==b; num++){
+    for( let a=0,b=1 ; a!==b; ){
+      num++
         let c = num.toString();
         a = parseInt(c.slice(0, Math.ceil(c.length/2)));
         b = parseInt(c.slice(Math.floor(c.length/2), c.length).split("").reverse().join(""));
     }
+   
     return num ;
   }
 
